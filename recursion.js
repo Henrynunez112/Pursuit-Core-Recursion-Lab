@@ -16,9 +16,8 @@ const multArr = (arr) =>{
 console.log(multArr([2, 3, 5]))
 
 const concatArr = (arr) =>{
-    if(arr.length === 0) return "";
-    let string = arr.concat()
-    return concatArr(string)
+    if(arr.length <= 0) return "";
+    let string = arr.pop()
+    return concatArr(arr) + " " + string
 }
 console.log(concatArr(['or', 'just', 'the', 'end', 'of', 'time']))
-
